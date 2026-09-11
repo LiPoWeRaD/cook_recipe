@@ -5,7 +5,7 @@ export const chiliConCarne: Recipe = {
   title: "Чили кон карне",
   description:
     "Сытный мясной суп с фасолью, помидорами и остротой чили. Насыщенный вкус, простые шаги и идеальная пара — хрустящий белый хлеб.",
-  imageUrl: `${process.env.__NEXT_ROUTER_BASE_PATH || ''}/images/recipes/chili-con-carne.jpg`,
+  imageUrl: "/images/recipes/chili-con-carne.jpg",
   dishType: "soup",
   difficulty: "medium",
   prepTimeMinutes: 15,

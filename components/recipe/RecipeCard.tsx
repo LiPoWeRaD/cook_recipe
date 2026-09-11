@@ -50,7 +50,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
             {recipe.imageUrl && (
               <div className="w-full sm:w-1/3 h-48 object-fill rounded-xl shadow-md border border-stone-200 dark:border-stone-700">
                 <img
-                  src={recipe.imageUrl}
+                  src={`${process.env.__NEXT_ROUTER_BASE_PATH || ''}${recipe.imageUrl}`}
                   alt={recipe.title}
                   className="w-full h-48 object-fill rounded-xl shadow-md border border-stone-200 dark:border-stone-700"
                 />
