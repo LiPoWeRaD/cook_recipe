@@ -9,6 +9,12 @@ interface RecipeCardProps {
   recipe: Recipe;
 }
 
+// Проверяем, запущен ли проект в режиме сборки (production)
+const IS_PROD = process.env.NODE_ENV === 'production';
+
+// Если это продакшен — подставляем имя репозитория, если локальный компьютер — оставляем пустоту
+const BASE_PATH = IS_PROD ? '/cook_recipe' : '';
+
 function MetaItem({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-lg bg-stone-100 px-3 py-2 dark:bg-stone-800">
@@ -50,7 +56,7 @@ export function RecipeCard({ recipe }: RecipeCardProps) {
             {recipe.imageUrl && (
               <div className="w-full sm:w-1/3 h-48 object-fill rounded-xl shadow-md border border-stone-200 dark:border-stone-700">
                 <img
-                  src={`${process.env.__NEXT_ROUTER_BASE_PATH || ''}${recipe.imageUrl}`}
+                  src={`${BASE_PATH}${recipe.imageUrl}`}
                   alt={recipe.title}
                   className="w-full h-48 object-fill rounded-xl shadow-md border border-stone-200 dark:border-stone-700"
                 />
