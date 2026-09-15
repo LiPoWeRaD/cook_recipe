@@ -11,7 +11,9 @@ const nextConfig: NextConfig = {
   // ВАЖНО: Укажите имя вашего репозитория GitHub со слэшем в начале.
   // Например, если репозиторий называется "my-portfolio", то basePath: '/my-portfolio'
   // Если вы разворачиваете на основной домен (username.github.io), basePath писать НЕ нужно.
-  basePath: '/cook_recipe',
+  // если локально, то basePath: ''
+  // код
+  basePath: process.env.NODE_ENV === 'development' ? '' : '/cook_recipe',
 };
 
 export default nextConfig;

@@ -8,9 +8,9 @@ export const chiliConCarne: Recipe = {
   imageUrl: "/images/recipes/chili-con-carne.jpg",
   dishType: "soup",
   difficulty: "medium",
-  prepTimeMinutes: 15,
-  cookTimeMinutes: 30,
-  servings: 4,
+  prepTimeMinutes: 10,
+  cookTimeMinutes: 31,
+  servings: 10,
   tags: ["мясное", "острое", "фасоль"],
   ingredients: [
     { name: "Лук репчатый", amount: 1, unit: "pcs", note: "≈ 100 г" },

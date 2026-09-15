@@ -8,8 +8,8 @@ export const HakhukaSMysnumFarhem: Recipe = {
   imageUrl: "/images/recipes/hakhuka-s-mysnum-farhem.jpg",
   dishType: "main",
   difficulty: "easy",
-  prepTimeMinutes: 30,
-  cookTimeMinutes: 45,
+  prepTimeMinutes: 10,
+  cookTimeMinutes: 40,
   servings: 4,
   tags: ["мясное", "филиппинское", "овощное"],
   ingredients: [
